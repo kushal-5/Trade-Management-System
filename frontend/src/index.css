@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .nepali-date-picker input {
+  color: #BDBDBD ;
+  height:3.5rem;
+  font-weight: 400; /* Normal */
+  background-color: black;
+ /* border-bottom: 1px solid #BDBDBD;*/
+  border-radius: 0.1rem; /* 6px (rounded-md) */
+  padding-top: 0.5rem; /* 24px */
+  padding-bottom: .5rem; /* 24px */
+  padding-right: 0rem; /* 8px */
+  padding-left: 0rem; /* 48px (pl-12) */
+  margin-left: 3rem;
+  outline: none;
+
+  }

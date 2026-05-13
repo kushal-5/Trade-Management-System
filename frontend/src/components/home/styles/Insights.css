@@ -1,0 +1,18 @@
+.expand-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .expand-content.active {
+    max-height: 500px; 
+  }
+  
+  .insight-item-title {
+    text-align: left;
+    transition: text-align 0.3s ease-out;
+  }
+  
+  .insight-item-title.active {
+    text-align: center;
+  }

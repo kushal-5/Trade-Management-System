@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
+import Login from "./pages/LoginPage/Login";
+import { Route, Routes, Navigate } from "react-router-dom";
+import DashboardLayout from "./components/layout/DashboardLayout";
+import Home from "./pages/DashboardPages/HomePage";
+import PendingProfile from "./pages/PendingUser/PendingUserPage";
+import TradeContent from "./pages/DashboardPages/TradePage";
+import TradeUserContent from "./pages/DashboardPages/TradeUserPage";
+import BrokerManagementContent from "./pages/DashboardPages/UserPage";
+import StockCompanyManagement from "./pages/DashboardPages/StockCompanyManagement";
+import FinanceContent from "./pages/DashboardPages/FinancePage";
+import SettingContent from "./pages/DashboardPages/SettingPage";
+import { AuthProvider } from "./provider/brokerAuthProvider";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <AuthProvider>
 
-export default App
+    <Routes>
+      <Route path="/" element={<Navigate to="/login" replace />} />
+      <Route path="/login" element={<Login />} />
+
+      <Route path="/admin" element={<DashboardLayout />}>
+        <Route index element={<Navigate to="home" replace />} />
+        <Route path="home" element={<Home />} />
+        <Route path="trade" element={<TradeContent/>}/>
+        <Route path="trademanagement" element={<TradeUserContent/>}/>
+        <Route path="brokermanagement" element={<BrokerManagementContent/>}/>
+        <Route path="stockmanagement" element={<StockCompanyManagement/>}/>
+        <Route path="transactionSettlement" element={<FinanceContent/>}/>
+        <Route path="settings" element={<SettingContent/>} />
+        <Route path={'verifyUser/:id'} element={<PendingProfile/>}/>
+        <Route path={"getUserBy/:id"} element={<PendingProfile/>}/>
+
+      </Route>
+
+      <Route path="*" element={<Navigate to="/login" replace />} />
+    </Routes>
+    </AuthProvider>
+  );
+};
+
+export default App;
