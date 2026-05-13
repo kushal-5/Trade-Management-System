@@ -1,7 +1,10 @@
+# env
+.env
+api/.env
+backend/.env
+frontend/.env
+
+# dependencies
 node_modules
 dist
-build
 .vite
-.env
-frontend/node_modules
-broker-dashboard/node_modules
