@@ -1,0 +1,12 @@
+/node_modules
+/dist
+/build
+/public
+/src
+/index.html
+/vite.config.js
+/package.json
+/package-lock.json
+/README.md
+/LICENSE
+/CHANGELOG.md
