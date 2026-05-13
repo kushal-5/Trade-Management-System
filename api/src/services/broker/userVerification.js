@@ -1,5 +1,5 @@
 const userSchema= require("../../models/registrationSchema/User.Schema")
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 
 export const verifyUser = async (email) => {

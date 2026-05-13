@@ -1,5 +1,5 @@
 const Broker = require("../../models/broker/brokerSchema");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const envConfig = require("../../config/envConfig");
 

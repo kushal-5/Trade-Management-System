@@ -3,7 +3,7 @@ const {
   verifyAndResetPassword,
   registerUser,
 } = require("../../services/user/userService");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { generateAccessToken } = require("../../config/jwtConfig");
 const UserSchema = require("../../models/registrationSchema/User.Schema");
 const envConfig = require("../../config/envConfig");
