@@ -1,5 +1,5 @@
 import React from "react";
-import rectangleimg from "../../assets/profileimg/rectangle.svg";
+import rectangleimg from "../../assets/profileimg/Rectangle.svg";
 import settingimg from "../../assets/profileimg/setting.svg";
 const files = [
   {

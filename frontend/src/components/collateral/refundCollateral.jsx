@@ -1,7 +1,7 @@
 import Box from "../../shared/box";
 import InBox from "./inBox";
 import moneyImg from "../../assets/images/collateralLogo/money.svg";
-import accountImg from "../../assets/images/collateralLogo/icon.svg";
+import accountImg from "../../assets/images/collateralLogo/Icon.svg";
 import Buttons from "../../shared/buttons";
 function RefundCollateral() {
   return (

@@ -4,7 +4,6 @@ import CompletedTrade from "../components/ui/dailyTrade/completedTrade";
 import { useCheckAuth } from "@/providers/CheckAuthProvider";
 import { useOrder } from "../contexts/order/orderContext";
 import BorderBox from "../shared/borderBox";
-import InputBox from "../shared/inputBox";
 import OrderSearchBar from "../components/buysell/ordersearch";
 
 const DailyTrade = () => {

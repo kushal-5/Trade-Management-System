@@ -3,7 +3,7 @@ import Umale from "../../../assets/images/registrationImages/uncolouredMale.svg"
 import Male from "../../../assets/images/registrationImages/ColorMale.svg";
 import Ufemale from "../../../assets/images/registrationImages/NoColorFemale.svg";
 import Female from "../../../assets/images/registrationImages/colouredFemale.svg";
-import Uother from "../../../assets/images/registrationImages/vector.svg";
+import Uother from "../../../assets/images/registrationImages/Vector.svg";
 import Other from "../../../assets/images/registrationImages/ColorVector.svg";
 import TickIcon from "../../../assets/images/registrationImages/checkBlue.svg"; // Add a blue tick icon here
 import { useFormContext } from "../../../contexts/formProvider";

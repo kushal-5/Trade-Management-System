@@ -23,7 +23,7 @@ import MoneyLaunder2 from "../../../pages/RegisterPages/MoneyLaundering/MoneyLau
 import MoneyLaunder3 from "../../../pages/RegisterPages/MoneyLaundering/MoneyLaunder3";
 import MoneyLaunder4 from "../../../pages/RegisterPages/MoneyLaundering/MoneyLaunder4";
 import ICON from "../../../assets/images/registrationImages/info.svg";
-import UICON from "../../../assets/images/registrationImages/uncolouredInfo.svg";
+import UICON from "../../../assets/images/registrationImages/UncolouredInfo.svg";
 import Header from "../RegisterLayout/Header";
 import { useFormContext } from "../../../contexts/formProvider";
 import { useAuth } from "../../../contexts/authProvider";

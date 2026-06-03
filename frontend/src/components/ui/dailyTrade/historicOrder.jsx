@@ -2,7 +2,7 @@ import React from "react";
 import Table from "../../../shared/table";
 import { useOrder } from "../../../contexts/order/orderContext";
 import { useCheckAuth } from "@/providers/CheckAuthProvider";
-import InputBox from "../../../shared/inputBox";
+import InputBox from "../../../shared/Inputbox";
 import dateimg from "../../../assets/images/orderLogo/date.svg";
 import Buttons from "../../../shared/buttons";
 import { formatedTime, formatedDate } from "@/utils/formatedTime";
